@@ -1,7 +1,5 @@
 # pics4
 
-FIXME: description
-
 ## Installation
 
 Requires leiningen.
@@ -14,17 +12,6 @@ Duplicate letters are significant.
 
     $ lein run letters length
 
-## Examples
-
-...
-
-### Bugs
-
-...
-
-### Any Other Sections
-### That You Think
-### Might be Useful
 
 ## License
 
