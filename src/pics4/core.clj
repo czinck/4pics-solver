@@ -8,8 +8,8 @@
 )
 
 (defn get_dictionary [n]
-  (let [words (filter (fn [word] (re-find #"^[a-z]*$" word)) (clojure.string/split-lines (slurp "/home/christian/cracklib-small")))]
-    (group-by unordered_hash (filter (fn [word] (= (count word) n) ) words))
+  (let [words (filter (fn [word] (and (re-find #"^[a-z]*$" word) (= (count word) n))) (clojure.string/split-lines (slurp "/home/christian/cracklib-small")))]
+    (group-by unordered_hash words)
   )
 )
 
