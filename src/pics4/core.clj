@@ -9,7 +9,7 @@
 
 (defn get_dictionary [n]
   (let [words (filter (fn [word] (and (= (count word) n) (re-find #"^[a-z]+$" word)))
-      (clojure.string/split-lines (slurp "/home/christian/cracklib-small")))]
+      (clojure.string/split-lines (slurp (System/getenv "PICS_DICTIONARY"))))]
     (group-by unordered_hash words)
   )
 )

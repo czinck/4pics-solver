@@ -3,11 +3,11 @@
 ## Installation
 
 Requires leiningen.
-Just copy the git repo, and it's ready to run.
+Set PICS_DICTIONARY to a dictionary that hopefully has the word.
 
 ## Usage
 
-FIXME: prints all words with letters "letters" and of length length.
+Prints all words with letters "letters" and of length length.
 Duplicate letters are significant.
 
     $ lein run letters length
